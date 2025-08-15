@@ -1,0 +1,27 @@
+@use 'sass:map';
+
+$colors: (
+  "background": #f6f5f2,
+
+  "primary": #9f9f9f,
+  "primary-dark": #3F3F40,
+  "primary-light": #f0f0f0,
+
+  "secundary": #3019b2,
+  "secundary-dark": #271c47,
+  
+  "accent": #f7ca11,
+);
+
+@function color($color-name) {
+  @return map.get($colors, $color-name);
+}
+
+$font-family-base: 'Poppins', sans-serif;
+
+$font-weight-regular: 400;
+$font-weight-medium: 500;
+$font-weight-semibold: 600;
+$font-weight-bold: 700;
+
+$font-size-base: 1.6rem;

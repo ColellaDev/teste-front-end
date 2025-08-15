@@ -1,0 +1,6 @@
+@use '../../../styles/base/variables';
+
+.bottomContainer {
+  background-color: variables.color('secundary');
+  color: variables.color('primary-light');
+}

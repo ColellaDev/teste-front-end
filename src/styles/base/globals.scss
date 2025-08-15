@@ -1,0 +1,29 @@
+@use './variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  font-family: variables.$font-family-base;
+  font-weight: variables.$font-weight-regular;
+  font-size: variables.$font-size-base;
+  background-color: variables.color("background");
+  color: variables.color("primary-dark");
+}
+
+img, svg {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

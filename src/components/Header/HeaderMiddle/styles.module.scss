@@ -1,0 +1,6 @@
+@use '../../../styles/base/variables';
+
+.middleContainer {
+  background-color: variables.color('primary-dark');
+  color: variables.color('primary-light');
+}
