@@ -2,7 +2,7 @@
 
 .bottomContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   font-weight: variables.$font-weight-semibold;
 
@@ -31,10 +31,14 @@
       }
     }
 
+    @media (max-width: variables.breakpoint('xl')) {
+    gap: 2.4rem;
+    }
+
     @media (max-width: variables.breakpoint('md')) {
     flex-direction: column;
     gap: 2.4rem;
-  }
+    }
   }
 
    @media (max-width: variables.breakpoint('md')) {
