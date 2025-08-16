@@ -24,15 +24,6 @@
     gap: 2rem;
     cursor: pointer;
     font-weight: variables.$font-weight-semibold;
-    transition: all 0.2s ease-in-out;
-
-    &.selected, &:hover{
-      color: variables.color(secundary);
-      transform: scale(1.05); 
-      .iconDiv {
-        background-color: variables.color(background);
-      }
-    } 
 };
 
 .iconDiv {
@@ -49,5 +40,32 @@
       0 8px 8px 0 rgba(0,0,0,0.25),
       4px 0 4px -4px rgba(0,0,0,0.08), 
       4px 0 4px -4px rgba(0,0,0,0.08);
+};
+
+.categoriesActive {
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 2rem;
+    cursor: pointer;
+    font-weight: variables.$font-weight-semibold;
+    color: variables.color(secundary);
 }
+
+.iconDivActive {
+    width: 12rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: solid 1px variables.color(primary-light);
+    border-radius: 0.5rem;
+    box-shadow:
+      0 8px 8px 0 rgba(0,0,0,0.25),
+      4px 0 4px -4px rgba(0,0,0,0.08), 
+      4px 0 4px -4px rgba(0,0,0,0.08);
+};
 
