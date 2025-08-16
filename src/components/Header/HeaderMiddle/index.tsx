@@ -2,7 +2,11 @@ import styles from './styles.module.scss';
 
 import Logo from '../../../assets/images/Logo.png';
 import Search from '../../../assets/icons/Search.png';
-import { Icon } from '../../../ui/icons/Icon';
+
+import Group from '../../../assets/icons/Group.svg'
+import Heart from '../../../assets/icons/Heart.svg'
+import UserCircle from '../../../assets/icons/UserCircle.svg'
+import ShoppingCart from '../../../assets/icons/ShoppingCart.svg'
 
 export function HeaderMiddle() {
   return (
@@ -13,10 +17,10 @@ export function HeaderMiddle() {
         <img src={Search} alt="Ícone de busca" />
       </div>
       <div className={styles.iconsWrapper}>
-        <Icon name="box" width={28} height={28}/>
-        <Icon name="heart" width={28} height={28}/>
-        <Icon name="userCircle"/>
-        <Icon name="shoppingCart"/>
+        <img src={Group} alt="Ícone de grupo"/>
+        <img src={Heart} alt="Ícone de grupo"/>
+        <img src={UserCircle} alt="Ícone de grupo"/>
+        <img src={ShoppingCart} alt="Ícone de grupo"/>
       </div>
     </div>
   );

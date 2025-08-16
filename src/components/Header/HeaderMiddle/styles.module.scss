@@ -46,15 +46,11 @@
   align-items: center;
   gap: 3.2rem;
  
- 
-  svg  {
+  img {
     cursor: pointer;
     transition: all 0.2s ease-in-out;
-
-    color: variables.color(primary);
   
     &:hover {
-     color: variables.color(secundary);
      transform: scale(1.1); 
     }
   }
