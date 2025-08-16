@@ -1,0 +1,41 @@
+@use '../../../src/styles/base/variables';
+
+.heroContainer {
+    height: 39rem;
+    background-image: url(../../assets/images/Hero.png);
+    background-size: cover;
+    background-position: center;
+
+    div {
+        height: 100%;
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+        padding:  8rem;
+        color: variables.color(primary-light);
+        font-size: 3.2rem;
+
+        h1 {
+            font-size: 4.8rem;
+            font-weight: variables.$font-weight-semibold;
+        }
+
+        @media (max-width: variables.breakpoint("md")) {
+        padding: 2rem;
+        font-size: 2.4rem;
+
+        h1 {
+            font-size: 3.2rem;
+        }
+        }
+
+    }
+}
+
+.highlight { 
+     color: variables.color(accent);
+     font-weight: variables.$font-weight-bold;
+}
+
+.heroButton {
+    margin-top: 4rem;
+    width: 20rem;
+}

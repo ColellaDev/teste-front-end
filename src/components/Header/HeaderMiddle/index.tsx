@@ -1,6 +1,6 @@
 import styles from './styles.module.scss';
 
-import Logo from '../../../assets/Logo.png';
+import Logo from '../../../assets/images/Logo.png';
 import Search from '../../../assets/icons/Search.png';
 import { Icon } from '../../../ui/icons/Icon';
 
