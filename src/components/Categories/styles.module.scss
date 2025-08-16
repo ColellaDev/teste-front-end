@@ -24,9 +24,11 @@
     gap: 2rem;
     cursor: pointer;
     font-weight: variables.$font-weight-semibold;
+    transition: all 0.2s ease-in-out;
 
-    &.selected {
+    &.selected, &:hover{
       color: variables.color(secundary);
+      transform: scale(1.05); 
       .iconDiv {
         background-color: variables.color(background);
       }
