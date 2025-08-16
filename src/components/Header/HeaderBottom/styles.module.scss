@@ -1,6 +1,47 @@
 @use '../../../styles/base/variables';
 
 .bottomContainer {
-  background-color: variables.color('secundary');
-  color: variables.color('primary-light');
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: variables.$font-weight-semibold;
+
+  border: 1px solid variables.color(primary-light);
+    box-shadow:
+      10px 0 15px -10px rgba(0, 0, 0, 0.15),
+      -10px 0 15px -10px rgba(0, 0, 0, 0.15);
+
+  > ul {
+    display: flex;
+    gap: 9rem;
+    padding: 1.6rem 3.2rem;
+    justify-content: center;
+    align-items: center;
+
+    > li {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s ease-in-out;
+      
+      &:hover,
+      &.selected {
+        color: variables.color(secundary);
+        cursor: pointer;
+      }
+    }
+
+    @media (max-width: variables.breakpoint('md')) {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  }
+
+   @media (max-width: variables.breakpoint('md')) {
+    justify-content: center;
+  }
+}
+
+.icon {
+  margin-right: 1rem;
 }

@@ -1,7 +1,8 @@
 @use 'sass:map';
 
 $colors: (
-  "background": #f6f5f2,
+  "background": #ffffff,
+  "background-dark": #f6f5f2,
 
   "primary": #9f9f9f,
   "primary-dark": #3F3F40,
@@ -25,3 +26,13 @@ $font-weight-semibold: 600;
 $font-weight-bold: 700;
 
 $font-size-base: 1.6rem;
+
+$breakpoints: (
+  "xs": 480px,
+  "sm": 640px,
+  "md": 768px,
+);
+
+@function breakpoint($size) {
+  @return map.get($breakpoints, $size);
+}

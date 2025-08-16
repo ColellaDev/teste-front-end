@@ -15,12 +15,16 @@ body {
   font-weight: variables.$font-weight-regular;
   font-size: variables.$font-size-base;
   background-color: variables.color("background");
-  color: variables.color("primary-dark");
+  color: variables.color("primary");
 }
 
 img, svg {
   display: block;
   max-width: 100%;
+}
+
+li {
+  list-style: none;
 }
 
 a {

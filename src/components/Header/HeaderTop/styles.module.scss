@@ -8,6 +8,26 @@
 
   display: flex;
   justify-content: center;
-  gap: 12rem
+  align-items: center;
+  gap: 12rem;
+
+   border-bottom: 1px solid variables.color(primary-light);
+
+
+  > div {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem; 
+    
+  }
+
+  @media (max-width: variables.breakpoint("md")) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
+.highlight {
+    color: variables.color('secundary');
+    font-weight: variables.$font-weight-semibold;
+}

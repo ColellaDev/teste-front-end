@@ -1,6 +1,61 @@
 @use '../../../styles/base/variables';
 
 .middleContainer {
-  background-color: variables.color('primary-dark');
-  color: variables.color('primary-light');
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem 0rem;
+
+  @media (max-width: variables.breakpoint('md')) {
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+}
+
+.searchWrapper {
+  position: relative;
+  width: 100%;
+  max-width: 630px;
+  
+
+  input {
+    width: 100%;
+    height: 4.8rem;
+    padding: 1.2rem 4.5rem 1.2rem 1.5rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.4rem;
+    background-color: variables.color(background-dark);
+
+    &::placeholder {
+      opacity: 0.7;
+    }
+  }
+
+  img {
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+}
+
+.iconsWrapper {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+ 
+ 
+  svg  {
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+
+    color: variables.color(primary);
+  
+    &:hover {
+     color: variables.color(secundary);
+      transform: scale(1.1); 
+    }
+  }
 }
