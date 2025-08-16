@@ -1,6 +1,7 @@
 import { Header } from "./components/Header"
 import { Hero } from "./components/Hero"
 import { Categories } from "./components/Categories"
+import { Partners } from "./components/Partners"
 
 export function App() {
 
@@ -9,6 +10,7 @@ export function App() {
       <Header />
       <Hero/>
       <Categories/>
+      <Partners/>
     </>
   )
 }

@@ -1,0 +1,9 @@
+@use "../../../src/styles/base/variables";
+
+.partnersContainer {
+    padding: 9rem 8rem;
+    display: flex;
+    justify-content: center;
+    gap: 1.3rem;
+    flex-wrap: wrap;
+}
