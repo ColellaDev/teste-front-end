@@ -9,9 +9,12 @@ export function ProductCard({ product }: ProductCardProps) {
     return (
         <div className={styles.productCardContainer}>
             <img src={product.photo} alt={product.productName} className={styles.imgCard} />
-            <h3>{product.productName}</h3>
-             <p>{product.descriptionShort}</p>
-            <p><strong>Preço:</strong> R$ {product.price.toFixed(2).replace('.', ',')}</p>
+            <p className={styles.pStandart}>{product.productName}</p>
+            <p className={styles.pStandart}>{product.descriptionShort}</p>
+            <p className={styles.originalPrice}>R$ {product.price.toFixed(2).replace('.', ',')}</p>
+            <p className={styles.currentPrice}>R$ {product.price.toFixed(2).replace('.', ',')}</p>
+            <p className={styles.installmentPrice}>ou 2x de R$ {(product.price / 2).toFixed(2).replace('.', ',')} sem juros</p>
+            <p className={styles.spanDeliver}>Frete grátis</p>
          </div>
-    )
+    ) 
 }

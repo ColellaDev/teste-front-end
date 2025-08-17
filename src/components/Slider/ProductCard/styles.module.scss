@@ -1,7 +1,46 @@
-
+@use "../../../styles/base/variables";
 
 .productCardContainer {
-    padding: 1rem;
-    margin: 1rem;
+    flex-shrink: 0;
+    width: 30.4rem;
+    height: 50rem;
     border: 1px solid;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.imgCard {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+
+.pStandart {
+    font-size: 1.5rem;
+    color: variables.color(primary-dark);
+    
+}
+
+.originalPrice {
+    font-size: 1.4rem;
+    text-decoration: line-through;
+    margin-top: 1.2rem;
+}
+
+.currentPrice {
+    font-size: 2rem;
+    color: variables.color(primary-dark);
+    font-weight: variables.$font-weight-bold;
+}
+
+.installmentPrice {
+    font-size: 1.2rem;
+    color: variables.color(primary-dark);
+}
+
+.spanDeliver {
+    font-size: 1.2rem;
+    color: variables.color(secundary);
+    margin-top: 1.2rem;
 }
