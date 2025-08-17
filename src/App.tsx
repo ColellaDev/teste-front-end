@@ -5,6 +5,7 @@ import { Partners } from "./components/Partners"
 
 import { useEffect } from "react";
 import { fetchProducts } from "./services/apiProducts";
+import { ProductNav } from "./components/ProductNav";
 
 export function App() {
 
@@ -26,6 +27,7 @@ export function App() {
       <Header />
       <Hero/>
       <Categories/>
+      <ProductNav/>
       <Partners/>
     </>
   )

@@ -1,0 +1,21 @@
+@use '../../../../src/styles/base/variables';
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+}
+
+.menuItem {
+  color: variables.color(primary-dark);
+  border: 1px solid variables.color(line);
+  padding: 1rem 7.2rem;
+  cursor: pointer;
+  transition: color 0.2s ease-in-out;
+}
+
+.selected {
+  color: variables.color(secundary);
+  font-weight: variables.$font-weight-bold;
+}

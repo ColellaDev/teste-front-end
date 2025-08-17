@@ -1,0 +1,30 @@
+@use "../../../src/styles/base/variables";
+
+.titleRelatedProductContainer {
+    width: 113.8rem;
+    height: 3.5rem;
+    padding: 0 2rem;
+    margin: 0 auto;
+    margin-bottom: 0.25rem;
+    
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; 
+
+    @media (max-width: variables.breakpoint("md")) {
+        width: 40rem;
+    }
+
+    &::before,
+    &::after {
+        content: '';
+        flex-grow: 1; 
+        height: 1px;
+        background-color: variables.color(line);
+    }
+
+    .title {
+        color: variables.color(secundary);
+        white-space: nowrap;
+    }
+}

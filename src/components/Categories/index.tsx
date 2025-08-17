@@ -13,51 +13,51 @@ export function Categories() {
         <section className={styles.categoriesContainer}>
             <div className={styles.categoriesGroup}>
 
-                <div className={styles.categoriesActive}>
-                    <div className={styles.iconDivActive}>
-                        <img src={tecnology}  alt="Imagem de tecnologia"/>
+                <div className={`${styles.categories} ${styles.categoriesActive}`}>
+                    <div className={`${styles.iconDiv} ${styles.iconDivActive}`}>
+                        <img src={tecnology}  alt="Imagem de tecnologia com tela e celulares"/>
                     </div>
                      Tecnologia
                 </div>
 
                 <div className={styles.categories}>
                     <div className={styles.iconDiv}>
-                        <img src={supermarket}  alt="Imagem"/>
+                        <img src={supermarket}  alt="Imagem de um mercado"/>
                     </div>
                      Supermercado
                 </div>
 
                 <div className={styles.categories}>
                     <div className={styles.iconDiv}>
-                        <img src={drinks}  alt="Imagem "/>
+                        <img src={drinks}  alt="Imagem de Bebidas com garrafa e copo"/>
                     </div>
                      Bebidas
                 </div>  
 
                  <div className={styles.categories}>
                     <div className={styles.iconDiv}>
-                        <img src={tools}  alt="Imagem "/>
+                        <img src={tools}  alt="Imagem de ferramentas com martelo e chave de fenda"/>
                     </div>
                      Ferramentas
                 </div>  
 
                  <div className={styles.categories}>
                     <div className={styles.iconDiv}>
-                        <img src={health}  alt="Imagem "/>
+                        <img src={health}  alt="Imagem de saúde, com uma mão segurando coração "/>
                     </div>
                      Saúde
                 </div>  
 
                 <div className={styles.categories}>
                     <div className={styles.iconDiv}>
-                        <img src={fitness}  alt="Imagem "/>
+                        <img src={fitness}  alt="Imagem de esportes e fitiness, com homem correndo na esteira "/>
                     </div>
                      Esportes e Fitness
                 </div>  
 
                 <div className={styles.categories}>
                     <div className={styles.iconDiv}>
-                        <img src={fashion}  alt="Imagem "/>
+                        <img src={fashion}  alt="Imagem de moda, com vestido e sapato"/>
                     </div>
                      Moda
                 </div>  
