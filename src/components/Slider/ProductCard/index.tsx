@@ -15,6 +15,7 @@ export function ProductCard({ product }: ProductCardProps) {
             <p className={styles.currentPrice}>R$ {product.price.toFixed(2).replace('.', ',')}</p>
             <p className={styles.installmentPrice}>ou 2x de R$ {(product.price / 2).toFixed(2).replace('.', ',')} sem juros</p>
             <p className={styles.spanDeliver}>Frete grátis</p>
+            <button className={styles.button}>COMPRAR</button>
          </div>
     ) 
 }

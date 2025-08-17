@@ -9,11 +9,12 @@ $colors: (
   "primary-light": #f0f0f0,
 
   "secundary": #3019b2,
+  "secundary-light": #3442B5,
   "secundary-dark": #271c47,
   
   "accent": #f7ca11,
   "line": #DEDEDE,
-  "white": #ffffff,
+  "whiteBasic": #ffffff,
 );
 
 @function color($color-name) {
