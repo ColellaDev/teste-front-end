@@ -1,6 +1,8 @@
 import { useState } from 'react';
-import { Icon } from '../../../ui/icons/Icon';
 import styles from './styles.module.scss';
+
+import CrownSimple from "../../../assets/icons/CrownSimple.svg"
+import CrownSimpleBlue from "../../../assets/icons/CrownSimpleBlue.svg"
 
 const menuItems = [
   { text: 'TODAS CATEGORIAS' },
@@ -9,7 +11,7 @@ const menuItems = [
   { text: 'MODA' },
   { text: 'LANÇAMENTO' },
   { text: 'OFERTAS DO DIA' },
-  { text: 'ASSINATURA', icon: 'crownSimple' },
+  { text: 'ASSINATURA', icon: CrownSimple || CrownSimpleBlue },
 ];
 
 export function HeaderBottom() {
@@ -24,9 +26,12 @@ export function HeaderBottom() {
             className={selectedItem === item.text ? styles.selected : ''}
             onClick={() => setSelectedItem(item.text)}
           >
-            {item.icon && (
-              <Icon name={item.icon} width={18} height={18} className={styles.icon} />
-            )}
+            {item.text === 'ASSINATURA' && (
+            <img
+            src={selectedItem === item.text ? CrownSimpleBlue : CrownSimple}
+            className={styles.crownIcon}
+            alt="Ícone de uma coroa"/>)}
+
             {item.text}
           </li>
         ))}

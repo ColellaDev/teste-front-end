@@ -23,11 +23,10 @@
       align-items: center;
       justify-content: center;
       transition: color 0.2s ease-in-out;
+      cursor: pointer;
       
-      &:hover,
       &.selected {
         color: variables.color(secundary);
-        cursor: pointer;
       }
     }
 
@@ -46,6 +45,6 @@
   }
 }
 
-.icon {
+.crownIcon {
   margin-right: 1rem;
 }
