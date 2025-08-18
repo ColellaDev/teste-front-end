@@ -3,11 +3,12 @@ import type { ProductTypes } from '../../../types/product';
 
 interface ProductCardProps {
     product: ProductTypes;
+    onClick: (product: ProductTypes) => void;
 }
 
-export function ProductCard({ product }: ProductCardProps) {
+export function ProductCard({ product, onClick }: ProductCardProps) {
     return (
-        <div className={styles.productCardContainer}>
+        <div className={styles.productCardContainer} onClick={() => onClick(product)}>
             <img src={product.photo} alt={product.productName} className={styles.imgCard} />
             <p className={styles.pStandart}>{product.productName}</p>
             <p className={styles.pStandart}>{product.descriptionShort}</p>

@@ -6,7 +6,7 @@ export function RelatedProducts() {
     return (
         <section className={styles.relatedProductsContainer}>
             <TitleRelatedProduct/>
-            <p>Ver todos</p>
+            <p className={styles.pProducts}>Ver todos</p>
             <Slider/>
         </section>
     )
