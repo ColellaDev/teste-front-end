@@ -4,13 +4,20 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4rem;
+
+  @media (max-width: variables.breakpoint('md')) {
+       flex-direction: column;
+    }
 }
 
 .menuItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21.4rem;
+  height: 4rem;
   color: variables.color(primary-dark);
   border: 1px solid variables.color(line);
-  padding: 1rem 7.2rem;
   cursor: pointer;
   transition: color 0.2s ease-in-out;
 }
