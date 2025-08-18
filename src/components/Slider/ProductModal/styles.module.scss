@@ -53,6 +53,46 @@
     cursor: pointer;
   }
 
+  .sellContainer {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    margin-top: 3.2rem;
+  }
+
+  .quantitySelector {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 11rem;
+    height: 3.6rem;
+    padding: 1rem;
+    border: 1px solid variables.color(line);
+    border-radius: 0.5rem;
+
+    .quantityButton {
+      background-color: variables.color(whiteBasic);
+      color: variables.color(primary);
+      font-size: 2.5rem;
+      cursor: pointer;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: color 0.2s;
+
+      &:hover {
+        color: variables.color(primary-dark);
+      }
+    }
+
+    .quantityDisplay {
+      font-size: 1.6rem;
+      font-weight: variables.$font-weight-medium;
+      color: variables.color(primary-dark);
+    }
+  }
+
   .buyButton {
     width: 18.8rem;
     height: 3.6rem;
@@ -67,7 +107,7 @@
     align-self: flex-start;
 
     &:hover {
-       filter: brightness(0.85);
+       filter: brightness(0.95);
     }
   }
 }
