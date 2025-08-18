@@ -26,7 +26,6 @@ export function Brands() {
                     </div>
                 ))}
             </div>
-
         </section>
     )
 }

@@ -1,20 +1,19 @@
 @use 'sass:map';
 
 $colors: (
-  "background": #ffffff,
+  "whiteBasic": #ffffff,
   "background-dark": #f6f5f2,
 
   "primary": #9f9f9f,
   "primary-dark": #3F3F40,
   "primary-light": #f0f0f0,
 
-  "secundary": #3019b2,
+  "secundary": #3019b2,  
   "secundary-light": #3442B5,
   "secundary-dark": #271c47,
   
   "accent": #f7ca11,
   "line": #DEDEDE,
-  "whiteBasic": #ffffff,
 );
 
 @function color($color-name) {

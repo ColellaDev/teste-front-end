@@ -1,0 +1,16 @@
+@use '../../styles/base/variables';
+
+.relatedProductsContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    padding: 9rem 0rem;
+
+    p {
+        display: flex;
+        align-self: center;
+        font-size: 1.5rem;
+        font-weight: variables.$font-weight-bold;
+        color: variables.color(primary-dark)
+    };
+}
