@@ -1,0 +1,42 @@
+@use "../../../src/styles/base/variables";
+
+.brandsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5rem;
+    gap: 2rem;
+
+    h2 {
+        color: variables.color(secundary);
+    }
+}
+
+.brandsDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4.2rem;
+}
+
+.brandsItem {
+    display: flex;
+    justify-content: center;
+    align-items: center;;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 100%;
+    box-shadow: 0px 6px 10px;
+    cursor: pointer;
+
+    @media (max-width: variables.breakpoint('md')) {
+        width: 15rem;
+        height: 15rem;
+
+        img {
+            width: 75%;
+        }
+    }
+}
+
+

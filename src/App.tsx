@@ -4,6 +4,7 @@ import { Categories } from "./components/Categories"
 import { Partners } from "./components/Partners"
 import { ProductNav } from "./components/ProductNav";
 import { Slider } from "./components/Slider";
+import { Brands } from "./components/Brands";
 
 export function App() {
 
@@ -15,6 +16,7 @@ export function App() {
       <ProductNav/>
       <Slider/>
       <Partners/>
+      <Brands/>
     </>
   )
 }
