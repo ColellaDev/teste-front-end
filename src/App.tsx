@@ -6,6 +6,8 @@ import { ProductNav } from "./components/ProductNav";
 import { Slider } from "./components/Slider";
 import { Brands } from "./components/Brands";
 import { NewsLetter } from "./components/NewsLetter";
+import { Footer } from "./components/Footer";
+import { FooterCopyright } from "./components/FooterCopyright";
 
 export function App() {
 
@@ -19,6 +21,8 @@ export function App() {
       <Partners/>
       <Brands/>
       <NewsLetter/>
+      <Footer/>
+      <FooterCopyright/>
     </>
   )
 }
