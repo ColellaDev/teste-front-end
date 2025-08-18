@@ -27,7 +27,7 @@ export function ProductModal({ product, onClose }: ModalProps) {
         <img src={product.photo} alt={product.productName} />
         <div className={styles.productInfo}>
           <h2>{product.productName}</h2>
-          <p className={styles.price}>R$ {product.price.toFixed(2).replace('.', ',')}</p>
+          <p className={styles.price}>R$ {product.price.toLocaleString('pt-BR', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</p>
           <p className={styles.description}>Many desktop publishing packages and web page editors now many desktop publishing</p>
           <p className={styles.spanSeeMore}>Veja mais detalhes do produto &gt;</p>
           <div className={styles.sellContainer}>
