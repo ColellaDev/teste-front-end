@@ -5,6 +5,7 @@ import { Partners } from "./components/Partners"
 import { ProductNav } from "./components/ProductNav";
 import { Slider } from "./components/Slider";
 import { Brands } from "./components/Brands";
+import { NewsLetter } from "./components/NewsLetter";
 
 export function App() {
 
@@ -17,6 +18,7 @@ export function App() {
       <Slider/>
       <Partners/>
       <Brands/>
+      <NewsLetter/>
     </>
   )
 }

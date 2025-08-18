@@ -1,0 +1,65 @@
+@use '../../styles/base/variables';
+
+.newsLetterContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 8rem;
+    background-color: variables.color(secundary-dark);
+
+    @media (max-width: variables.breakpoint('md')) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+}
+
+.newsLetterText {
+    color: variables.color(whiteBasic);
+    h5 {
+        font-size: 3.2rem;
+        font-weight: variables.$font-weight-semibold;
+        margin-bottom: 0.8rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+        font-weight: variables.$font-weight-light;
+    }
+}
+
+.newsLetterForm {
+    display: flex;
+    max-width: 63.9rem;
+    flex-wrap: wrap; 
+    gap: 0.8rem;
+    align-items: center;
+
+    @media (max-width: variables.breakpoint('md')) {
+        flex-direction: column;
+    }
+}
+
+.inputForm {
+    max-width: 23rem; 
+    height: 4.2rem;
+    margin-right: 0.8rem;
+    padding: 1.2rem 9.5rem 1.2rem 2.4rem;
+    border-radius: 8px;
+    border: none;
+    font-size: 1.4rem;
+    background-color: variables.color(background-dark);
+}
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    margin-top: 0.8rem;
+    flex-basis: 100%;
+
+    label {
+        font-size: 1.4rem;
+        color: variables.color(whiteBasic);
+    }
+}
