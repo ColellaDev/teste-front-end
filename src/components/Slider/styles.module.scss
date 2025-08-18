@@ -1,9 +1,39 @@
+@use '../../styles/base/variables';
 
+.sliderWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 0rem 19rem;
+}
 
 .sliderContainer {
-    display: flex;
-    max-width: 120rem;
-    margin: 2rem auto;
-    overflow-x: auto;
-    gap: 1.5rem; 
+  display: flex;
+  gap: 1.6rem;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  padding: 1rem;
+  flex: 1;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.navButton {
+  background: #fff;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  padding: 0.8rem 1.2rem;
+  font-size: 2rem;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+  z-index: 2;
+
+  &:hover {
+    background: #f0f0f0;
+  }
 }
