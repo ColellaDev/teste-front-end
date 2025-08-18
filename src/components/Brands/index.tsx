@@ -20,8 +20,8 @@ export function Brands() {
         <section className={styles.brandsContainer}>
             <h2>Navegue por marcas</h2>
             <div className={styles.brandsDiv}>
-                {brands.map((brand) => (
-                    <div key={brand.name} className={styles.brandsItem}>
+                {brands.map((brand, index) => (
+                    <div key={index} className={styles.brandsItem}>
                         <img src={brand.img} alt={brand.name} />
                     </div>
                 ))}
