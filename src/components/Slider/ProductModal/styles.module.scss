@@ -44,11 +44,13 @@
 
   .description {
     font-size: 1rem;
+    font-family: variables.$font-family-alternative;
   }
 
   .spanSeeMore {
     color: variables.color(secundary-light);
     font-size: 1.1rem;
+    font-family: variables.$font-family-alternative;
     font-weight: variables.$font-weight-semibold;
     cursor: pointer;
   }
