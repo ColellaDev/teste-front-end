@@ -5,6 +5,7 @@
     height: 35rem;
     background-image: url(../../../assets/images/BannerPartner.png);
     background-size: cover;
+
     
      div {
         height: 100%;
@@ -19,18 +20,46 @@
             font-weight: variables.$font-weight-bold;
         }
 
+        .partnerButton {
+            margin-top: 3.2rem;
+            font-weight: variables.$font-weight-bold;
+        }
+
         @media (max-width: variables.breakpoint("md")) {
             padding: 2rem;
-            font-size: 2.4rem;
+            font-size: 2rem;
 
              h3 {
-            font-size: 3.2rem;
+            font-size: 3rem;
             }
         }
-    }
-};
 
-.partnerButton {
-    margin-top: 3.2rem;
-    font-weight: variables.$font-weight-bold;
+        @media (max-width: variables.breakpoint("sm")) {
+            padding: 2rem;
+            font-size: 1.5rem;
+
+             h3 {
+             font-size: 2.5rem;
+            }
+
+            .partnerButton {
+             height: 3.5rem;
+             width: 11rem;
+             margin-top: 3.2rem;
+             font-weight: variables.$font-weight-bold;
+             font-size: 1.2rem;
+             }
+        }
+    }
+
+    @media (max-width: variables.breakpoint("md")) {
+        width: 45rem;
+        height: 25rem;
+    }
+
+    @media (max-width: variables.breakpoint("sm")) {
+        width: 40rem;
+        height: 20rem;
+    }
 }
+
