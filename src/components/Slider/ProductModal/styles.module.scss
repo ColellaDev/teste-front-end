@@ -72,7 +72,7 @@
 
     .quantityButton {
       background-color: variables.color(whiteBasic);
-      color: variables.color(primary);
+      color: variables.color(secundary-dark);
       font-size: 2.5rem;
       cursor: pointer;
       border: none;
@@ -89,7 +89,7 @@
     .quantityDisplay {
       font-size: 1.6rem;
       font-weight: variables.$font-weight-medium;
-      color: variables.color(primary-dark);
+      color: variables.color(secundary-dark);
     }
   }
 

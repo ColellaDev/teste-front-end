@@ -2,9 +2,14 @@
 
 .sliderWrapper {
   position: relative;
-  display: flex;
-  align-items: center;
-  padding: 0rem 19rem;
+  width: 100%;
+  max-width: 141rem;
+  margin: 0 auto;
+  padding: 0 8rem;
+
+  @media (max-width: variables.breakpoint('md')) {
+    max-width: 47rem;
+  }
 }
 
 .sliderContainer {
@@ -13,27 +18,48 @@
   overflow-x: auto;
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
-  padding: 1rem;
-  flex: 1;
+  padding-block: 1rem;
 
   &::-webkit-scrollbar {
     display: none;
   }
-  -ms-overflow-style: none;
-  scrollbar-width: none;
 }
 
 .navButton {
-  background: #fff;
-  border: 1px solid #ddd;
-  cursor: pointer;
-  padding: 0.8rem 1.2rem;
-  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 4.2rem;
+  height: 4.2rem;
+  font-size: 3rem;
+  background-color: variables.color(whiteBasic);
+  color: variables.color(primary-dark);
+  border: 2px solid variables.color(line);
+  box-shadow: 0 6px 6px 0 rgba(0,0,0,0.25),
+               2px 0 2px -4px rgba(0,0,0,0.08);
   border-radius: 50%;
-  transition: all 0.2s ease;
-  z-index: 2;
-
+  cursor: pointer;
+  transition: all 0.3s ease;
+  
   &:hover {
-    background: #f0f0f0;
+    filter: brightness(0.95);
   }
+
+  &:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    transform: translateY(-50%) scale(0.95);
+  }
+}
+
+.prevButton {
+  left: 5px;
+}
+
+.nextButton {
+  right: 5px;
 }

@@ -20,6 +20,8 @@
 
     > li {
       display: flex;
+      font-size: 1.2rem;
+      font-weight: variables.$font-weight-semibold;
       align-items: center;
       justify-content: center;
       transition: color 0.2s ease-in-out;
